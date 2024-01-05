@@ -1,12 +1,36 @@
+;
 <html>
     <head>
         <title>Slowtris</title>
+        <link rel="manifest" href="/manifest.json" />
         <link rel="stylesheet" href="index.css" />
+        <link rel="apple-touch-icon" href="icon.png" />
+        <meta
+            name="viewport"
+            content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=noviewport-fit=cover"
+        />
+        <meta name="mobile-web-app-capable" content="yes" />
     </head>
     <body>
         <center>
             <div id="board"></div>
+            <div id="controls">
+                <div class="controlrow">
+                    <div class="button11" id="control-SL" onclick="event.preventDefault(); onControlSL()"></div>
+                    <div class="button11"></div>
+                    <div class="button11" id="control-SR" onclick="event.preventDefault(); onControlSR()"></div>
+                </div>
+                <div class="controlrow">
+                    <div class="button11" id="control-L" onclick="event.preventDefault(); onControlL()"></div>
+                    <div class="button11"></div>
+                    <div class="button11" id="control-R" onclick="event.preventDefault(); onControlR()"></div>
+                </div>
+                <div class="controlrow">
+                    <div class="button11" id="control-D" onclick="event.preventDefault(); onControlD()"></div>
+                    <div class="button21" id="control-HD" onclick="event.preventDefault(); onControlHD()"></div>
+                </div>
+            </div>
         </center>
-        <script type="module" src="src/main.js"></script>
+        <script type="module" src="src/main.js?v=2"></script>
     </body>
 </html>

@@ -21,7 +21,7 @@ export class Slowtris {
 
     render() {
         const view = viewMatrix(this.tetris)
-        console.log(view)
+        // console.log(view)
 
         let html = ""
         for (const row of view) {

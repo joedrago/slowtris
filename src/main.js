@@ -25,3 +25,22 @@ window.onload = () => {
         false
     )
 }
+
+window.onControlL = (ev) => {
+    window.slowtris.action("MOVE_LEFT")
+}
+window.onControlR = (ev) => {
+    window.slowtris.action("MOVE_RIGHT")
+}
+window.onControlSL = (ev) => {
+    window.slowtris.action("FLIP_COUNTERCLOCKWISE")
+}
+window.onControlSR = (ev) => {
+    window.slowtris.action("FLIP_CLOCKWISE")
+}
+window.onControlD = (ev) => {
+    window.slowtris.action("MOVE_DOWN")
+}
+window.onControlHD = (ev) => {
+    window.slowtris.action("HARD_DROP")
+}
